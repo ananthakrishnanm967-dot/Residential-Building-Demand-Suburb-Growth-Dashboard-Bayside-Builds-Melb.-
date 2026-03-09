@@ -1,197 +1,71 @@
-# Melbourne Residential Development Opportunity Analysis
+
+This captures **demand scale**, not just growth percentage.
 
 ---
 
-## Business Problem
+### Development Opportunity Score
 
-Residential developers, property investors, and urban planners constantly face a critical question:
+A composite metric was created to evaluate suburbs based on:
 
-**Where should new housing developments be built to capture the highest demand and long-term growth potential?**
+- population growth rate  
+- total population size  
+- number of new residents  
 
-Building in the wrong location can lead to:
+These indicators were normalized and combined to generate an overall **Development Opportunity Score**.
 
-- slow property absorption
-- reduced return on investment
-- oversupply in stagnant suburbs
+This score helps identify suburbs where:
 
-Meanwhile, Melbourne continues to expand rapidly, with certain suburbs experiencing significantly higher population growth than others. However, identifying which areas truly present development opportunities requires structured analysis rather than relying on intuition.
-
-This project analyzes suburb-level population data to identify high-growth suburbs with strong indicators for residential development opportunities.
-
----
-
-## Objective of the Analysis
-
-The primary objective of this analysis was to:
-
-- Identify Melbourne suburbs experiencing significant population growth
-- Detect suburbs gaining large numbers of new residents
-- Combine these indicators into a **Development Opportunity Score**
-- Highlight locations where future residential development demand is likely to be strongest
-
-The analysis aims to support **data-driven decision making for housing development strategy**.
+- growth is strong  
+- population base is meaningful  
+- demand is increasing  
 
 ---
 
-## Key Findings & Insights
+## 4. Data Visualization
 
-The analysis revealed several strong patterns in Melbourne’s suburban growth dynamics.
+Several visualizations were created to communicate the findings clearly:
 
-### 1. Western and South-Eastern Suburbs Lead Population Expansion
+- **Development Opportunity Ranking**  
+  Identifies suburbs with the highest overall development potential.
 
-Suburbs such as:
+- **Population Increase Analysis**  
+  Highlights suburbs attracting the largest number of new residents.
 
-- Fraser Rise – Plumpton  
-- Clyde North – South  
-- Rockbank – Mount Cottrell  
-- Mickleham – Yuroke  
-- Tarneit – North  
+- **Growth Distribution Analysis**  
+  Shows how many suburbs fall into different population growth categories.
 
-are experiencing significant population expansion.
+- **Development Opportunity Heatmap**  
+  Compares key indicators across the top performing suburbs.
 
-These suburbs show a combination of:
-
-- high population growth rates  
-- strong inflow of new residents  
-- growing housing demand  
+These visualizations make it easier for stakeholders to interpret **complex population trends quickly**.
 
 ---
 
-### 2. High Population Growth Corridors Are Emerging
+# Tools & Technologies
 
-Several suburbs showed **double-digit annual population growth rates**, far exceeding the metropolitan average.
+The analysis was conducted using:
 
-| Suburb | Growth Rate |
-|------|------|
-| Fraser Rise – Plumpton | ~26% |
-| Tarneit – North | ~20% |
-| Clyde North – South | ~19% |
+**Python**
 
-These growth levels indicate **rapid residential expansion corridors**.
+Key libraries used:
 
----
+- Pandas (data processing)  
+- NumPy (numerical operations)  
+- Matplotlib (visualization)  
+- Seaborn (advanced visualization)
 
-### 3. Population Increase Signals Housing Demand
-
-Suburbs such as:
-
-- Rockbank – Mount Cottrell  
-- Wollert  
-- Werribee – West  
-- Wallan  
-
-are seeing **thousands of new residents annually**.
-
-Large inflows of residents indicate:
-
-- housing demand  
-- infrastructure expansion  
-- urban growth boundaries expanding outward  
+The analysis was conducted using **Jupyter Notebook**.
 
 ---
 
-### 4. Growth Is Concentrated in Specific Development Zones
+# Conclusion
 
-Rather than being evenly distributed across Melbourne, growth appears clustered in specific suburban corridors, primarily:
+This analysis demonstrates how population data can be used to identify residential development opportunities across Melbourne suburbs.
 
-- Western Melbourne  
-- South-Eastern growth corridor  
+Key conclusions:
 
-This reflects ongoing **urban expansion patterns and land availability**.
+- Melbourne's population growth is concentrated in specific suburban corridors.
+- Western and south-eastern suburbs are expanding rapidly.
+- Certain suburbs show strong indicators of future housing demand.
 
----
-
-## Business Implications & Recommendations
-
-Based on the analysis, several strategic recommendations emerge for developers and investors.
-
-### 1. Focus Development in High-Growth Suburbs
-
-Suburbs such as:
-
-- Fraser Rise – Plumpton  
-- Clyde North – South  
-- Rockbank – Mount Cottrell  
-
-present strong opportunities for residential development due to their combination of:
-
-- rapid population growth  
-- increasing housing demand  
-- expanding population base  
-
----
-
-### 2. Target Emerging Growth Corridors Early
-
-Entering emerging suburbs early can provide:
-
-- lower land acquisition costs  
-- stronger long-term appreciation  
-- higher demand from new residents  
-
-Developers should closely monitor **Melbourne's western and south-eastern corridors**, where urban expansion is most visible.
-
----
-
-### 3. Align Housing Supply with Population Expansion
-
-Population growth signals increasing demand for:
-
-- residential housing  
-- schools and childcare  
-- retail infrastructure  
-- transportation links  
-
-Developers and urban planners should ensure that **housing supply aligns with population trends**.
-
----
-
-# Analytical Methodology
-
-This section explains how the analysis was conducted.
-
----
-
-## 1. Data Source
-
-The analysis uses official population estimates from the:
-
-**Australian Bureau of Statistics (ABS)**
-
-Dataset used:
-
-**Estimated Resident Population by Statistical Area Level 2 (SA2)**
-
-Key variables included:
-
-- SA2 suburb name  
-- population estimates for 2023  
-- population estimates for 2024  
-- geographic classifications  
-
----
-
-## 2. Data Preparation
-
-The raw ABS dataset required cleaning and transformation.
-
-Key steps included:
-
-- Removing summary rows and totals  
-- Standardizing suburb names  
-- Extracting Melbourne suburbs using GCCSA classifications  
-- Converting population columns into numeric formats  
-
-The cleaned dataset produced **suburb-level population records for Melbourne**.
-
----
-
-## 3. Feature Engineering
-
-Three key indicators were calculated.
-
-### Population Growth Rate
-
-Measures the percentage growth between **2023 and 2024**.
-
-Formula:
+By combining **growth rates, population size, and resident inflows**, the analysis highlights suburbs where residential development is likely to see strong demand in the coming years.
